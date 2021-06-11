@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'calculator-dig';
+    src: url(fonts/digital-7.ttf);
+}
+@font-face {
+    font-family: 'calculator-dig-italics';
+    src: url(fonts/digital-7\ \(italic\).ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-family: 'calculator-dig',Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+h2{
+    font-family: 'calculator-dig-italics',Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.machine{
+    border-radius: 10px;
+    margin: 30px auto;
+    background-color: black;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.display{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 20px auto;
+    width: 80%;
+    background-color: rgb(40, 245, 84);
+    height: 80px;
+    border: 10px solid rgb(21, 182, 21);
+    border-radius: 10px;
+    box-shadow: 0 0 70px 3px  rgb(40, 245, 84);
+}
+.expression{
+  font-family: 'calculator-dig',Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+}
+.result{
+    font-family: 'calculator-dig',Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+.container{
+    
+    margin: 20px auto;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap:wrap;
+    width: 95%;
+}
+.container div{
+    display: inline-flex;
+    text-shadow: 0 0 25px white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 40px;
+    color:white;
+    background-color:#362f2f;
+    border: 1px solid black;
+}
+.clear p{
+     color: tomato;
+      font-size: 30px;
+      text-shadow: 0 0 25px tomato;
+}
+.operators p{
+    text-shadow: 0 0 25px rgb(233, 164, 15);
+    font-size: 30px;
+    color:rgb(233, 164, 15);
+}
+.back p{
+    transform: rotate(90deg);
+    font-size: 29px;
+    color: tomato;
+    text-shadow: 0 0 25px tomato;
+}
+.equal p{
+    color: teal;
+    text-shadow: 0 0 25px teal
+}
+.container div:hover{
+    background-color: black;
+    cursor: pointer;
+}
+@media only screen and (min-width: 900px){
+    .machine{
+        width: 500px;
+    }
+    .container{
+        margin-left: 35px;
+    }
+    .container div{
+        height: 60px;
+    }
+    .display{
+        height: 100px;
+    }
+    .expression{
+        font-size: 30px;
+    }
+    .result{
+        font-size: 40px;
+    }
+}
+
+    
+    
+    
